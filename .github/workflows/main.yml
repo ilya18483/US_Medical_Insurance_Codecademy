@@ -23,15 +23,10 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    - name: Create TOC
-      run: |
-        jupyter-book toc hypoxic_cpr_book
-
-
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build hypoxic_cpr_book
+        jupyter-book build .
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
