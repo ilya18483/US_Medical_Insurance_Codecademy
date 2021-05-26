@@ -25,13 +25,13 @@ jobs:
 
     - name: Create TOC
       run: |
-        jupyter-book toc from-site
+        jupyter-book toc hypoxic_cpr_book
 
 
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build .
+        jupyter-book build hypoxic_cpr_book
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
