@@ -22,6 +22,10 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
+        
+    - name: Update TOC
+      run: |
+        jupyter-book toc migrate /home/runner/work/US_Medical_Insurance_Codecademy/US_Medical_Insurance_Codecademy/_toc.yml
 
     # Build the book
     - name: Build the book
